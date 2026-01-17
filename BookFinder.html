@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFinder – Book Searching App | Chris Lufuilu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to case study pages */
+        .case-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #f8f9fc 0%, #e8f0fe 100%);
+            text-align: center;
+        }
+        .case-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .case-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .meta-item {
+            text-align: center;
+        }
+        .meta-item strong {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .case-image {
+            margin: 60px 0;
+            text-align: center;
+        }
+        .case-image img {
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            max-width: 100%;
+        }
+        .case-section {
+            margin-bottom: 80px;
+        }
+        .case-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .case-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+        }
+        .two-column {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+        .two-column img {
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+        }
+        @media (max-width: 992px) {
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CHRIS<span> LUFUILU</span></a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="container">
+            <h1>BookFinder – Book Searching App</h1>
+            <p>
+                A mobile app that helps students and avid readers quickly find the original, legitimate version of a book,
+                using either text search or a photo of the book cover.
+            </p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <strong>Role</strong>
+                    UI/UX Designer
+                </div>
+                <div class="meta-item">
+                    <strong>Duration</strong>
+                    1 week (concept project)
+                </div>
+                <div class="meta-item">
+                    <strong>Tools</strong>
+                    Figma
+                </div>
+                <div class="meta-item">
+                    <strong>Type</strong>
+                    Mobile app design
+                </div>
+            </div>
+
+            <a href="https://www.figma.com/design/OrGnpKYA5iLVzR1QpkvEcS/Untitled?node-id=0-1&t=Ed36hUR5g8QPkYr5-1"
+               target="_blank" class="btn primary">
+                View prototype in Figma
+            </a>
+        </div>
+    </section>
+
+    <!-- Hero Mockup -->
+    <div class="container case-image">
+        <!-- replace with your BookFinder home or flow mockup -->
+        <img src="book.png" alt="BookFinder App Hero Mockup">
+    </div>
+
+    <!-- The Challenge -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>The Challenge</h2>
+            <p>
+                Students and readers often waste time on unreliable websites trying to find the right version of a book.
+                Search results can be confusing, some copies are not legitimate, and users are never sure if they have
+                found the correct, original edition.
+            </p>
+            <p>
+                The goal of BookFinder is to make it simple to search for a specific book and be redirected to a
+                trusted retailer that offers the correct version.
+            </p>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section case-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>User Research</h2>
+            <p>
+                To understand current behaviour, a small survey and informal interviews were done with students and
+                frequent readers who search for books online and in apps. Key questions explored how often they read,
+                how they currently search, and what frustrates them about existing tools.
+            </p>
+            <ul style="max-width: 800px; margin: 30px auto; font-size: 1.1rem; line-height: 1.8;">
+                <li>Many users are not confident that the books they find online are original or unedited.</li>
+                <li>Most apps only support text search by title or author; people also want to search using the cover image.</li>
+                <li>Too many recommendations and ads make it hard to know which source is trustworthy.</li>
+            </ul>
+
+            <div class="case-image">
+                <!-- replace with persona / research image -->
+                <img src="user.png" alt="BookFinder Research Insights">
+            </div>
+        </div>
+    </section>
+
+    <!-- Persona & Problem -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>Persona & Needs</h2>
+            <p>
+                The primary persona is Peter, a 24‑year‑old student who reads often and looks for books that he cannot
+                find in the library. He wants a simple, affordable way to find legitimate copies online without wasting time.
+            </p>
+            <ul style="max-width: 800px; margin: 30px auto; font-size: 1.1rem; line-height: 1.8;">
+                <li>Easy‑to‑use app with a clear search flow.</li>
+                <li>Ability to search by typing the name, author, ISBN, or by uploading a cover photo.</li>
+                <li>Confidence that links lead to trusted retailers and not misleading websites.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- User Journey & Flow -->
+    <section class="section case-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>User Journey & Flow</h2>
+            <p>
+                The journey focuses on a quick path from opening the app to landing on a trusted retailer page.
+                Two main search methods were designed: manual text search and image search using a photo of the book cover.
+            </p>
+            <ul style="max-width: 800px; margin: 30px auto; font-size: 1.1rem; line-height: 1.8;">
+                <li>Home: one main search bar for title / author / ISBN and a secondary button for image search.</li>
+                <li>Search: results list with book cards that show cover, title, author, and a short description.</li>
+                <li>Book details: full information and a primary button “Find the book online” that opens a trusted retailer.</li>
+            </ul>
+
+            <div class="case-image">
+                <!-- replace with your user flow / journey image -->
+                <img src="userflow.png" alt="BookFinder User Flow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>Design Process</h2>
+            <p>
+                The design started as simple dot‑style wireframes to define the hierarchy on each screen. From there,
+                high‑fidelity mockups were created in Figma, focusing on clarity, trust and consistency across the flow.
+            </p>
+
+            <div class="two-column">
+                <div>
+                    <h3>Wireframes</h3>
+                    <p>
+                        Early wireframes explored different ways of combining text search, image search and trending titles
+                        on the home screen. The final structure uses one main search bar, a clear “Image search” button,
+                        and a horizontal carousel of trending books.
+                    </p>
+                </div>
+                <!-- replace with wireframe image -->
+                <img src="lwf.png" alt="BookFinder Wireframes">
+            </div>
+
+            <div class="two-column" style="flex-direction: row-reverse; margin-top: 60px;">
+                <div>
+                    <h3>High‑Fidelity Screens</h3>
+                    <p>
+                        The final UI uses a green brand color, card‑based layouts and strong typographic hierarchy.
+                        Each screen highlights the main action: searching, choosing a result, or tapping the “Find the book online” button.
+                    </p>
+                </div>
+                <!-- replace with hi‑fi image -->
+                <img src="book.png" alt="BookFinder High‑fidelity Screens">
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Solution -->
+    <section class="section case-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Final Solution</h2>
+            <p>
+                BookFinder gives users two simple ways to find a book: typing the title, author or ISBN, or using an image
+                of the cover. Once a book is selected, the details screen confirms the edition and then sends the user to
+                a trusted retailer with a single tap.
+            </p>
+
+            <div class="case-image">
+                <!-- replace with final UI mockup (e.g., home, results, image search, book details) -->
+                <img src="result.png" alt="Final BookFinder Designs">
+            </div>
+        </div>
+    </section>
+
+    <!-- Learnings / Next Steps -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>Key Learnings & Next Steps</h2>
+            <p>
+                This project showed how important trust and clarity are when designing for online purchases. Clearly
+                separating search methods and explaining where links lead helps users feel more confident.
+            </p>
+            <p>
+                Next steps would include usability testing with students, adding more retailers, and exploring features
+                like user voting on the best source for each book.
+            </p>
+
+            <a href="index.html#projects" class="btn primary" style="display: inline-block; margin-top: 30px;">
+                Back to Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Chris<span> Lufuilu</span></div>
+                <p>Crafting meaningful digital experiences in Cape Town</p>
+
+                <ul class="footer-nav">
+                    <li class="footer-nav-item"><a href="index.html#home" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="index.html#about" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="index.html#projects" class="footer-nav-link">Projects</a></li>
+                    <li class="footer-nav-item"><a href="index.html#contact" class="footer-nav-link">Contact</a></li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Chris-L-1" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chris-l-036564230/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Ch4is_L7f78l7" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://dribbble.com/Chris_Lufuilu" target="_blank" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <p class="copyright">&copy; 2025 Chris Lufuilu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal JS -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>

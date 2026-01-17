@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow – Daily Task Manager | Chris Lufuilu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Reuse the main style.css; we've added case-study specific styles below if needed -->
+    <style>
+        /* Additional styles specific to case study pages */
+        .case-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #f8f9fc 0%, #e8f0fe 100%);
+            text-align: center;
+        }
+        .case-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .case-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+        }
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .meta-item {
+            text-align: center;
+        }
+        .meta-item strong {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .case-image {
+            margin: 60px 0;
+            text-align: center;
+        }
+        .case-image img {
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            max-width: 100%;
+        }
+        .case-section {
+            margin-bottom: 80px;
+        }
+        .case-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .case-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+        }
+        .two-column {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+        .two-column img {
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+        }
+        @media (max-width: 992px) {
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation (same as main site) -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">CHRIS<span> LUFUILU</span></a>
+           
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+           
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="container">
+            <h1>TaskFlow – Daily Task Manager</h1>
+            <p>A clean, minimalist task management app designed to boost productivity and reduce overwhelm for daily users.</p>
+           
+            <div class="project-meta">
+                <div class="meta-item">
+                    <strong>Role</strong>
+                    UI/UX Designer
+                </div>
+                <div class="meta-item">
+                    <strong>Duration</strong>
+                    3 Weeks
+                </div>
+                <div class="meta-item">
+                    <strong>Tools</strong>
+                    Figma
+                </div>
+                <div class="meta-item">
+                    <strong>Type</strong>
+                    Web App Design
+                </div>
+            </div>
+           
+            <a href="https://www.figma.com/design/h1pL4BK5ShjjNUcrvXyGYE/To-do-app?node-id=0-1&t=didEwpvaDrTk3mmf-1" target="_blank" class="btn primary">View Full Prototype in Figma</a>
+        </div>
+    </section>
+    <!-- Hero Mockup -->
+    <div class="container case-image">
+        <img src="images/todo.png" alt="TaskFlow App Hero Mockup">
+    </div>
+    <!-- The Challenge -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>The Challenge</h2>
+            <p>Many task apps are cluttered, leading to user stress. The objective was to create a calm interface that prioritizes focus and simplicity while handling complex task organization.</p>
+        </div>
+    </section>
+    <!-- Research -->
+    <section class="section case-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>User Research</h2>
+            <p>Interviews with 40+ professionals revealed key needs: quick task addition, clear prioritization, and minimal distractions.</p>
+            <ul style="max-width: 800px; margin: 30px auto; font-size: 1.1rem; line-height: 1.8;">
+                <li>75% want drag-and-drop prioritization</li>
+                <li>Calm color schemes preferred</li>
+                <li>Integration with calendars essential</li>
+            </ul>
+           
+            <div class="case-image">
+                <img src="images/research-placeholder.jpg" alt="User Research Insights"> <!-- Replace with your persona/wireframe images -->
+            </div>
+        </div>
+    </section>
+    <!-- Process -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>Design Process</h2>
+            <p>Began with sketches for layout, evolved to interactive prototypes with user testing at each stage.</p>
+           
+            <div class="two-column">
+                <div>
+                    <h3>Wireframes</h3>
+                    <p>Emphasized clean grids and intuitive drag interactions.</p>
+                </div>
+                <img src="images/wireframe-placeholder.jpg" alt="Low-fidelity Wireframes">
+            </div>
+           
+            <div class="two-column" style="flex-direction: row-reverse;">
+                <div>
+                    <h3>High-Fidelity Designs</h3>
+                    <p>Incorporated soft colors, ample whitespace, and subtle animations for task completion.</p>
+                </div>
+                <img src="images/hifi-placeholder.jpg" alt="High-fidelity Mockups">
+            </div>
+        </div>
+    </section>
+    <!-- Final Solution -->
+    <section class="section case-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Final Solution</h2>
+            <p>The app features customizable views, smart reminders, and a focus mode for distraction-free productivity.</p>
+           
+            <div class="case-image">
+                <img src="images/todo.png" alt="Final TaskFlow Designs">
+            </div>
+           
+            <p style="text-align: center; font-size: 1.2rem; margin-top: 40px;">Testing resulted in 45% improved task completion rates.</p>
+        </div>
+    </section>
+    <!-- Next Steps / Reflection -->
+    <section class="section case-section">
+        <div class="container">
+            <h2>Key Learnings & Next Steps</h2>
+            <p>Learned that less is more in productivity tools. Next: Add AI-powered task suggestions.</p>
+           
+            <a href="index.html#projects" class="btn primary" style="display: inline-block; margin-top: 30px;">Back to Projects</a>
+        </div>
+    </section>
+    <!-- Footer (same as main) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Chris<span> Lufuilu</span></div>
+                <p>Crafting meaningful digital experiences in Cape Town</p>
+               
+                <ul class="footer-nav">
+                    <li class="footer-nav-item"><a href="index.html#home" class="footer-nav-link">Home</a></li>
+                    <li class="footer-nav-item"><a href="index.html#about" class="footer-nav-link">About</a></li>
+                    <li class="footer-nav-item"><a href="index.html#projects" class="footer-nav-link">Projects</a></li>
+                    <li class="footer-nav-item"><a href="index.html#contact" class="footer-nav-link">Contact</a></li>
+                </ul>
+               
+                <div class="social-icons">
+                    <a href="https://github.com/Chris-L-1" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chris-l-036564230/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Ch4is_L7f78l7" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://dribbble.com/Chris_Lufuilu" target="_blank" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+           
+            <p class="copyright">&copy; 2025 Chris Lufuilu. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Minimal JS (same as main) -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+       
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+       
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
